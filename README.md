@@ -1,4 +1,10 @@
-# 为什么使用wx-qrcode-img
+# npm
+
+```bash
+npm i wx-base64-qrcode -S
+```
+
+# 为什么使用wx-base64-qrcode
 
 微信小程序二维码生成如果用 canvas 
 
@@ -11,14 +17,26 @@
 而使用 image 的 src 可以完美解决以上问题。
 
 # How to use it.
+
+Only for WeChat Mini Program.
+
+```xml
+<image src="{{imageSrc}}"></image>
+```
 ```js
 import QR from "./wxqrcode.js";
+Page({
+  data: {
+      imageSrc:'',
+  },
+  onLoad(){
+    const size = 100; //宽高
 
-const size = 100; //宽高
+    const base64Data = QR.createQrCodeImg( 'any str code', size) // base64的数据
 
-const base64Data = QR.createQrCodeImg( 'any str code', size) // base64的数据
-
-this.setDate({
-    imageSrc:base64Data
+    this.setDate({
+        imageSrc:base64Data
+    })
+  }
 })
 ```
