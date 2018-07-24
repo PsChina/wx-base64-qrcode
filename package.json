@@ -1,6 +1,6 @@
 {
   "name": "wx-base64-qrcode",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "base64Date for wx Qcode",
   "main": "wxqrcode.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "qrcode",
     "base64-qrcode",
     "wx-base64-qrcode",
-    "wx-qrcode"
+    "wx-qrcode",
+    "wxqrcode",
+    "微信",
+    "微信二维码",
+    "二维码"
   ],
   "author": "PsChina",
   "license": "ISC",
