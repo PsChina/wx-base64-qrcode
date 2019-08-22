@@ -34,7 +34,7 @@ Page({
 
     const base64Data = QR.createQrCodeImg( 'any str code', size) // base64的数据
 
-    this.setDate({
+    this.setData({
         imageSrc:base64Data
     })
   }
